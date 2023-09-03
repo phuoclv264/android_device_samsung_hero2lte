@@ -85,10 +85,10 @@ void vendor_load_properties()
         gsm_properties("9");
     }
 
-    // Adb
-    property_override("ro.adb.secure", "0");
-    property_override("ro.secure", "0");
-    property_override("ro.debuggable", "0");
+       // Adb
+    //property_override("ro.adb.secure", "0");
+    //property_override("ro.secure", "0");
+    //property_override("ro.debuggable", "0");
 
     std::string device = GetProperty("ro.product.device", "");
     LOG(ERROR) << "Found bootloader id " << bootloader <<  " setting build properties for "
